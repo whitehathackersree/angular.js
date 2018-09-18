@@ -202,7 +202,7 @@ code, we put it into a separate file and used the `.config` suffix.
 
 ```js
   angular.
-    module('phonecatApp').
+    module('phonecatApp', ['ngRoute']).
     config(['$locationProvider', '$routeProvider',
       function config($locationProvider, $routeProvider) {
         $locationProvider.hashPrefix('!');
